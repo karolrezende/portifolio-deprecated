@@ -1,0 +1,24 @@
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    line-height: 0.8;
+    &_container{
+        width: 75%;
+        &_h3{
+            font-size: 25px;
+        }
+        &_h1__first, &_h1__second{
+            font-size: 150px;
+        }
+        &_h1__first{
+            text-align: left;
+        }
+        &_h1__second{
+            text-align: right;
+        }
+    }
+}
