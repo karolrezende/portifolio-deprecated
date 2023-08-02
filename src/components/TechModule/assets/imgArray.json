@@ -1,0 +1,50 @@
+[
+    {
+      "nome": "tech icone",
+      "descricao": "src/components/TechModule/assets/css.svg"
+    },
+    {
+      "nome": "tech icon",
+      "descricao": "src/components/TechModule/assets/figma.svg"
+    },
+    {
+      "nome": "tech icon",
+      "descricao": "src/components/TechModule/assets/git.svg"
+    },
+    {
+      "nome": "tech icon",
+      "descricao": "src/components/TechModule/assets/html.svg"
+    },
+    {
+      "nome": "tech icon",
+      "descricao": "src/components/TechModule/assets/js.svg"
+    },
+    {
+      "nome": "tech icon",
+      "descricao": "src/components/TechModule/assets/next.svg"
+    },
+    {
+      "nome": "tech icon",
+      "descricao": "src/components/TechModule/assets/node.svg"
+    },
+    {
+      "nome": "tech icon",
+      "descricao": "src/components/TechModule/assets/postg.svg"
+    },
+    {
+      "nome": "tech icon",
+      "descricao": "src/components/TechModule/assets/react.svg"
+    },
+    {
+      "nome": "tech icon0",
+      "descricao": "src/components/TechModule/assets/sass.svg"
+    },
+    {
+      "nome": "tech icon1",
+      "descricao": "src/components/TechModule/assets/tailwind.svg"
+    },
+    {
+      "nome": "tech icon2",
+      "descricao": "src/components/TechModule/assets/ts.svg"
+    }
+  ]

@@ -1,4 +1,5 @@
 import SocialList from "../SocialList/SocialList";
+import TechList from "../TechList/TechList";
 import styles from './styles.module.scss'
 export default function InitialScreen() {
   return (
@@ -11,6 +12,7 @@ export default function InitialScreen() {
         <div className={styles.main_container_list}>
           <SocialList/>
         </div>
+        <TechList/>
       </div>
     </div>
     </>
