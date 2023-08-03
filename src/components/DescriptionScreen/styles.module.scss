@@ -6,11 +6,16 @@
     &_container{
         width: 75%;
         display: flex;
-        
+        gap: 1em;
         align-items: center;
         justify-content: space-between;
+        &_img{
+            img{
+                width: 25em;
+            }
+        }
         &_text{
-            font-size: 35px;
+            font-size: 1.5em;
             text-align: justify;
             width: 600px;
         }

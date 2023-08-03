@@ -1,0 +1,27 @@
+.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    &_preview{
+        display: flex;
+        align-items: center;
+       
+    }
+    &_ul{
+        width: 400px;
+        &_li{
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-radius: 8px;
+            cursor: pointer;
+            padding: 0.3em;
+        }
+        &_li:active{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        &_li:first-child{
+            border-top: 1px solid black;
+        }
+    }
+}
