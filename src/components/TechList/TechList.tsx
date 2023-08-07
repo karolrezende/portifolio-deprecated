@@ -7,7 +7,7 @@ export default function TechList() {
       <ul className={styles.container_ul}>
           <TechModule/>
       </ul>
-      <ul className={styles.container_ul}>
+      <ul className={styles.container_ul_2}>
           <TechModule/>
       </ul>
     </div>

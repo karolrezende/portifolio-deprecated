@@ -1,17 +1,7 @@
 .container{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     &_main{
-        margin: 4em 10em 0 10em;
-        &__title{
-            display: flex;
-            justify-content: start;
-        }
-        &__project{
-            display: flex;
-            justify-content: end;
-        }
+        display: flex;
+        flex-direction: column;
+        margin: 0 2em;
     }
 }

@@ -4,4 +4,27 @@
     justify-content: end;
     align-items: center;
     gap: 1em; 
+    &_li{
+        img{
+            width: 25px;
+        }
+    }
+}
+@media screen and (min-width: 800px) {
+    .container{
+        &_li{
+            img{
+                width: 30px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1100px) {
+    .container{
+        &_li{
+            img{
+                width: 40px;
+            }
+        }
+    }
 }

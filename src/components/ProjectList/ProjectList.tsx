@@ -16,7 +16,6 @@ export default function ProjectList() {
             {
                 projects.map((project: iProject)=> <div className={styles.main_ul_li}>
                     <p>{project.name}</p>
-                    
                 </div>)
             }
         </div>
