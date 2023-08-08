@@ -39,13 +39,22 @@
     .main{
         display: flex;
         gap: 2em;
-        justify-content: space-evenly;
+        justify-content: space-around;
+
         &_preview{
             display: flex;
             flex-direction: row;
+            background-color: #fff;
         }
         &_ul{
             width: 600px;
+            &_li{
+                padding: 1em;
+                font-size: 20px;
+            }
+            &_li:active{
+                font-size: 22px;
+            }
         }
     }
 }
