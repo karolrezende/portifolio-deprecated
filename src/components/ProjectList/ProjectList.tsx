@@ -1,30 +1,46 @@
 import React, { useState } from 'react'
 import projects from './assets/projects.json'
 import styles from './styles.module.scss'
-interface iProject{
-    name: string
-}
+import { iProject, useProjectContext } from '../../providers/ProjectsProvider'
+import SetProjectList from '../SetProjectList/SetProjectList'
 export default function ProjectList() {
     const [offline, setOffline] = useState(true)
 
-    const setOfflineFunction = () => {
+    const handleFunction = (project: number) => {
         setOffline(false)
+        setProjectList(project)
     }
+
+    const setProjectList = (project: number) =>{
+        setAtualProject(project)
+    }
+
+    const {setAtualProject} = useProjectContext()
   return (
     <>
     <div className={styles.main}>
         <div className={styles.main_preview}>
-            <div>
-                <h1 onClick={setOfflineFunction}>Clique para ver o preview</h1>
-                <div>
-                    oi
-                </div>
-            </div>
+         
+                {
+                    offline ? (<div className={styles.prev}>
+                            <div className={styles.prev_header}>X</div>
+                            <div className={styles.prev_body}>
+                                    Clique para ver o preview
+                        </div>
+                    
+                    </div>) : ''
+                }
+                {
+                    !offline ? (<>
+                        <SetProjectList/>
+                    </>):''
+                }
+         
         </div>
         <div className={styles.main_ul}>
             {
-                projects.map((project: iProject)=> <div className={styles.main_ul_li}>
-                    <p>{project.name}</p>
+                projects.map((project: iProject)=> <div className={styles.main_ul_li} onClick={()=>handleFunction(project.id)} key={project.id}>
+                    <p >{project.name}</p>
                 </div>)
             }
         </div>

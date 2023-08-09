@@ -5,10 +5,7 @@
         align-items: center;
        margin-bottom: 3em;
        justify-content: center;
-       background: #d4d4d4;
        border-radius: 8px;
-       padding: 1em;
-       margin-top: 1em;
        h1{
         text-align: center;
         color: #000000;
@@ -34,8 +31,30 @@
         }
     }
 }
-
-@media screen and (min-width: 800px) {
+.prev{
+    background-color: #d4d4d4;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    &_header{
+        background-color: #8a8a8a;
+        border-radius: 8px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-right: 10px;
+    }
+    &_body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1000px) {
     .main{
         display: flex;
         gap: 2em;
@@ -55,6 +74,18 @@
             &_li:active{
                 font-size: 22px;
             }
+        }
+    }
+    .prev{
+        height: 30%;
+        width: 1000px;
+        &_header{
+            height: 80px;
+            font-size: 20px;
+            padding-right: 50px;
+        }
+        &_body{
+            font-size: 38px;
         }
     }
 }

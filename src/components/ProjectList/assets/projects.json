@@ -1,7 +1,8 @@
 [
     {
         "id":1,
-        "name": "Burguer Kenzie"
+        "name": "Burguer Kenzie",
+        "image": ["src/components/SetProjectList/assets/hamb1.png","src/components/SetProjectList/assets/hamb2.png","src/components/SetProjectList/assets/hamb3.png"]
     },
     {
         "id":2,

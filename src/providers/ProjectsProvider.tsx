@@ -4,8 +4,9 @@ export interface iProject {
     name: string
 }
 interface iContext {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     setAtualProject: (atualProject: any) => void,
-    project: iProject
+    project: number
 }
 interface iReactNode{
     children: ReactNode
@@ -13,9 +14,9 @@ interface iReactNode{
 const ProjectContext = createContext<iContext>({} as iContext)
 
 export const ProjectProvider=({children}: iReactNode)=>{
-    const [project, setProject] = useState({} as iProject)
+    const [project, setProject] = useState({} as number)
 
-    const setAtualProject = (atualProject: iProject) => {
+    const setAtualProject = (atualProject: number) => {
         setProject(atualProject)
     }
 
